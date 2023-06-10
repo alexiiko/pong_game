@@ -121,6 +121,12 @@ while True:
             if event.key == pg.K_a:
                 ai_opponent = True
                 start_screen = False
+            if event.key == pg.K_ESCAPE:
+                start_screen = True
+                versus = False
+                ai_opponent = False
+                player_01_score = 0
+                player_02_score = 0
 
     if start_screen:
         screen.blit(start_screen_surf_bigger, (0,0))
