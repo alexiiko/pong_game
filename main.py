@@ -12,21 +12,21 @@ SCREEN_HEIGHT = 600
 screen = pg.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pg.display.set_caption("Pong")
 
-start_screen_surf = pg.image.load(os.path.join("OneDrive", "Desktop", "pong_game", "sprites", "start_screen.png"))
+start_screen_surf = pg.image.load("sprites/start_screen.png")
 start_screen_surf_bigger = pg.transform.scale(start_screen_surf, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
-middle_line_surf = pg.image.load(os.path.join("OneDrive", "Desktop", "pong_game", "sprites", "middle_line.png"))
+middle_line_surf = pg.image.load("sprites/middle_line.png")
 
-background_surf = pg.image.load(os.path.join("OneDrive", "Desktop", "pong_game", "sprites", "background.png"))
+background_surf = pg.image.load("sprites/background.png")
 background_surf_bigger = pg.transform.scale(background_surf, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
-player01_surf = pg.image.load(os.path.join("OneDrive", "Desktop", "pong_game", "sprites", "player.png")).convert_alpha()
+player01_surf = pg.image.load("sprites/player.png").convert_alpha()
 player01_rect = player01_surf.get_rect(center=(25, SCREEN_HEIGHT/2))
 
-player02_surf = pg.image.load(os.path.join("OneDrive", "Desktop", "pong_game", "sprites", "player.png")).convert_alpha()
+player02_surf = pg.image.load("sprites/player.png").convert_alpha()
 player02_rect = player01_surf.get_rect(center=(725, SCREEN_HEIGHT/2))
 
-ball_surf = pg.image.load(os.path.join("OneDrive", "Desktop", "pong_game", "sprites", "ball.png")).convert_alpha()
+ball_surf = pg.image.load("sprites/ball.png").convert_alpha()
 ball_rect = ball_surf.get_rect(center=(SCREEN_WIDTH/2, SCREEN_HEIGHT/2))
 ball_direction = [5, 5]
 
